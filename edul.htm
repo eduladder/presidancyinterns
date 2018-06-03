@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="shortcut icon" href="http://eduladder.com/images/app/logo.jpg" />
+<title>Eduladder Signup</title>
+</head>
+<body>
+<img src="http://eduladder.com/images/app/logo.jpg" alt = "Eduladder">
+<font size="6"><i>|| Students stress our Priority || </i></font>
+<br></br>  
+<label><b><font size="4">Fill the following form to get onboard :- </font></b></label>
+<br></br>  
+<label><b>First Name :    </b></label>
+<input type = "text" placeholder="Enter first name" required style="border-radius:7px; border:2px solid #dadada;" >
+<br></br>  
+<label><b>Last Name :     </b></label>
+<input type = "text" placeholder="Enter last name" required style="border-radius:7px; border:2px solid #dadada;" >
+<br></br>  
+<label><b>Username :      </b></label>
+<input type = "text" placeholder="Enter Username" required style="border-radius:7px; border:2px solid #dadada;" >
+<br></br>  
+<label><b>E-mail :        </b></label>
+<input type = "text" placeholder="Enter email" required style="border-radius:7px; border:2px solid #dadada;" >
+<br></br>
+<form action="/action_page.php">
+  <b>D.O.B :               </b>
+  <input type="date" name="DOB" style="border-radius:7px; border:2px solid #dadada;" >
+</form>
+<br></br>
+<label><b>Password : </b></label>
+<br></br>
+<input id="pass1" type="password" placeholder="Password" style="border-radius:7px; border:2px solid #dadada;" /> <br />
+<input id="pass2" type="password" placeholder="Confirm Password" style="border-radius:7px; border:2px solid #dadada;"/> <br />
+
+<script>
+    function myFunction() {
+    var pass1 = document.getElementById("pass1").value;
+    var pass2 = document.getElementById("pass2").value;
+    var ok = true;
+    if (pass1 != pass2) {
+        //alert("Passwords Do not match");
+        document.getElementById("pass1").style.borderColor = "#E34234";
+        document.getElementById("pass2").style.borderColor = "#E34234";
+        ok = false;
+    }
+    else {
+        alert("Passwords Match!!!");
+    }
+    return ok;
+}
+</script>
+<br></br>
+<form action="demo_form.asp">
+  <input type="checkbox" name="agree" value="yes"> I agree to the Terms of Use and Privacy Policy. <br>
+</form>
+<br></br>
+<button type="button" onclick="myFunction()">Sign up</button>
+<br></br>
+</body>
+</html>
+<!made by Satya Shiromani>
